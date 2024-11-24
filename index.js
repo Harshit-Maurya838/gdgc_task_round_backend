@@ -35,6 +35,9 @@ const ItemSchema = new mongoose.Schema({
 });
 
 const Item = mongoose.model("Item", ItemSchema);
+app.get("/", (req, res) => {
+  res.redirect("/listing");
+});
 
 app.get("/listing", async (req, res) => {
   try {
