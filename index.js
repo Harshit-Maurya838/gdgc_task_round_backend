@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const port = 5050;
+const port = process.env.PORT || 5050;
 require('dotenv').config()
 
 app.use(express.urlencoded({ extended: true }));
