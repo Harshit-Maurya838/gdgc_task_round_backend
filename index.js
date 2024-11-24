@@ -35,6 +35,7 @@ const ItemSchema = new mongoose.Schema({
 });
 
 const Item = mongoose.model("Item", ItemSchema);
+
 app.get("/", (req, res) => {
   res.redirect("/listing");
 });
@@ -85,7 +86,7 @@ app.delete("/listing/:id", async (req, res) => {
   try {
     const id = req.params.id;
     const items = await Item.findByIdAndDelete(id);
-    res.json({ "data": items });
+    res.status(200).json({ "data": items });
   } catch (err) {
     console.error(err);
     res.status(404).send({ error: "Failed to delete an item" });
