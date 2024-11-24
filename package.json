@@ -1,0 +1,17 @@
+{
+  "name": "gdgc_task_round_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "Harshit Maurya",
+  "license": "ISC",
+  "description": "Shopping Cart Backend",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.2"
+  }
+}
