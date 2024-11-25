@@ -6,6 +6,8 @@ A backend application built to handle server-side logic, APIs, and data processi
 
 Check out the live demo here: [Deployed Link](https://gdgc-task-round-backend.vercel.app/listing)
 
+Link(if above link not worked) - https://gdgc-task-round-backend.vercel.app/listing
+
 ## Features
 
 - Get the list of shopping items.
